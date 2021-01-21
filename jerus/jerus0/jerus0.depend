@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1611245201 source:c:\users\jsamr\documents\github\codeblocks\jerus\jerus0\main.c
+	<stdio.h>
+	<stdlib.h>
+
