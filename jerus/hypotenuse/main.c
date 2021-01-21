@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 double hypotenuse(double leg1, double leg2) {
 	return sqrt(((leg1*leg1)+(leg2*leg2)));
