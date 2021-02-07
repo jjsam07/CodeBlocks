@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1608128668 source:c:\users\jsamr\documents\codeblocks\andrei2\main.c
-	<stdio.h>
-	<stdlib.h>
-	<conio.h>
-	<unistd.h>
-
