@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1612687825 source:c:\users\jsamr\documents\codeblocks\isprime\main.c
+	<stdio.h>
+	<stdlib.h>
+

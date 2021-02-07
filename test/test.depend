@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1612516506 source:c:\users\jsamr\documents\codeblocks\test\main.c
+	<stdio.h>
+	<stdlib.h>
+

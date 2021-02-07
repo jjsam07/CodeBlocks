@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1609845482 source:c:\users\jsamr\documents\codeblocks\jerus\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+

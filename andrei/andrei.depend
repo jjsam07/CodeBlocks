@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1607858338 source:c:\users\jsamr\documents\codeblocks\andrei\main.c
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+
+1607852260 source:c:\users\jsamr\documents\bonak.c
+	<stdio.h>
+	<ctype.h>
+
