@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1612884711 source:c:\users\jsamr\documents\codeblocks\flames\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
