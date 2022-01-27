@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1643177614 source:c:\users\joseph\documents\2nd year\1st semester module answers\data structures and algorithms\activity 6\trees\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"tree.h"
+
+1643302644 c:\users\joseph\documents\2nd year\1st semester module answers\data structures and algorithms\activity 6\trees\tree.h
+	<stdlib.h>
+	<stdbool.h>
+	<ctype.h>
+
+1643064642 source:c:\users\joseph\documents\2nd year\1st semester module answers\data structures and algorithms\activity 6\trees\tree.h
+	<stdlib.h>
+	<stdbool.h>
+
+1643295340 source:c:\users\joseph\documents\2nd year\1st semester module answers\data structures and algorithms\activity 6\trees\visualize_tree.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"tree.h"
+
