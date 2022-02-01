@@ -20,3 +20,26 @@
 	<string.h>
 	"tree.h"
 
+1643404945 source:c:\users\joseph\documents\github\codeblocks\trees\visualize_tree.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"tree.h"
+
+1643720194 c:\users\joseph\documents\github\codeblocks\trees\tree.h
+	<stdlib.h>
+	<stdbool.h>
+	<ctype.h>
+
+1643668133 source:c:\users\joseph\documents\github\codeblocks\trees\avl.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"tree.h"
+
+1643581766 source:c:\users\joseph\documents\github\codeblocks\trees\bst.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"tree.h"
+

@@ -6,11 +6,12 @@
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
-			<Target title="Release">
-				<Option output="bin/Release/trees" prefix_auto="1" extension_auto="1" />
+			<Target title="bst">
+				<Option output="bst" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
+				<Option parameters='a SUNFLOWER*R*O*S*ECAMIA COMPUTERS*R*O*U*T*ETECHNOLOGY*C*L*O*S*E &quot;5 8 0 3 10 2 6 12 15 7 *2 *12 *8 *7 20 9 17 1 4 17 11 18 *4 *9 *20 *5 *6&quot; ' />
 				<Compiler>
 					<Add option="-O2" />
 				</Compiler>
@@ -18,12 +19,12 @@
 					<Add option="-s" />
 				</Linker>
 			</Target>
-			<Target title="visualize_tree">
-				<Option output="visualize_tree" prefix_auto="1" extension_auto="1" />
+			<Target title="avl">
+				<Option output="avl" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
-				<Option parameters="4 n" />
+				<Option parameters='a COMPUTERS*R*O*U*T*ETECHNOLOGY*C*L*O*S*E &quot;5 8 0 3 10 2 6 12 15 7 *2 *12 *8 *7 20 9 17 1 4 17 11 18 *4 *9 *20 *5 *6&quot; SUNFLOWER*R*O*S*ECAMIA ' />
 				<Compiler>
 					<Add option="-O2" />
 				</Compiler>
@@ -35,21 +36,15 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="main.c">
+		<Unit filename="avl.c">
 			<Option compilerVar="CC" />
-			<Option target="Release" />
+			<Option target="avl" />
 		</Unit>
-		<Unit filename="scrap.c">
+		<Unit filename="bst.c">
 			<Option compilerVar="CC" />
-			<Option compile="0" />
-			<Option link="0" />
-			<Option target="&lt;{~None~}&gt;" />
+			<Option target="bst" />
 		</Unit>
 		<Unit filename="tree.h" />
-		<Unit filename="visualize_tree.c">
-			<Option compilerVar="CC" />
-			<Option target="visualize_tree" />
-		</Unit>
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
