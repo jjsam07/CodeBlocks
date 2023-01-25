@@ -3,7 +3,7 @@
 #include <string.h>
 #include "tree.h"
 
-#define DEBUG false
+#define DEBUG true
 
 // Node width must be even
 

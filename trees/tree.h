@@ -5,13 +5,13 @@
 #include <stdbool.h>
 #include <ctype.h>
 
-#define DEBUG_LIB_DELETE false
-#define DEBUG_DECREASE_LEVEL false
-#define DEBUG_SET_LEVEL false
-#define DEBUG_UPDATE_HEIGHT false
-#define DEBUG_ROTATION false
-#define DEBUG_LIB_VISUALIZE false
-#define DEBUG_OTHER false
+#define DEBUG_LIB_DELETE true
+#define DEBUG_DECREASE_LEVEL true
+#define DEBUG_SET_LEVEL true
+#define DEBUG_UPDATE_HEIGHT true
+#define DEBUG_ROTATION true
+#define DEBUG_LIB_VISUALIZE true
+#define DEBUG_OTHER true
 
 int node_width;
 char mode;
@@ -1142,10 +1142,10 @@ bool visualize_tree(BST *node, BST *root, int node_width, char mode) {
 	int start_column;
 	int end_column;
 	int temp = 0;
-    linewidth = (power(2, root->height-1)*node_width)+1;
+	if (DEBUG_LIB_VISUALIZE) printf("DEBUG: visualize_tree wrapper: node_width = %d\n", node_width);
+    linewidth = (power(2, root->height-1)*node_width)+2;
     if (DEBUG_LIB_VISUALIZE) printf("Tree height: %d\n", root->height);
     lines = (4*(root->height-1))+1;
-    if (DEBUG_LIB_VISUALIZE) printf("Tree height: %d\n", root->height);
     buffer_size = linewidth*lines;
     if (DEBUG_LIB_VISUALIZE) printf("Allocating buffer...\n");
     buffer = (char*)malloc((linewidth*lines)+1);
@@ -1169,15 +1169,21 @@ bool visualize_tree(BST *node, BST *root, int node_width, char mode) {
     }
 
 	visualize_tree_real(node, root, buffer, node_width, mode);
-
+    puts(buffer);
 	start_column = linewidth/2;
 	end_column = linewidth/2;
 	for(int i = 0; i < lines; i += 4) {
         buffer[(linewidth*i)+(linewidth-1)] = '\0';
         temp = strchr(buffer+(linewidth*i), '[') - (buffer + (linewidth*i));
-        if (temp < start_column) start_column = temp;
+        if (temp < start_column) {
+            if (DEBUG_LIB_VISUALIZE) printf("DEBUG: visualize_tree wrapper: temp < start_column: temp = %d\n", temp);
+            start_column = temp;
+        }
         temp = strrchr(buffer+(linewidth*i), ']') - (buffer + (linewidth*i)) + 1;
-        if (temp > end_column) end_column = temp;
+        if (temp > end_column) {
+            if (DEBUG_LIB_VISUALIZE) printf("DEBUG: visualize_tree wrapper: temp > end_column: temp = %d\n", temp);
+            end_column = temp;
+        }
     }
 
     if (DEBUG_LIB_VISUALIZE) printf("start_column = %d\n", start_column);
